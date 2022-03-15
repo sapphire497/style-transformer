@@ -4,5 +4,5 @@
 <p align="center">
 <img src="./teaser.png" width="800px"/>
 <br>
-Our style transformer proposes novel multi-stage style transformer in $W^+$ space to invert image accurately, and we characterize the image editing in StyleGAN into label-based and reference-based, and use a non-linear classifier to generate the editing vector.
+Our style transformer proposes novel multi-stage style transformer in w+ space to invert image accurately, and we characterize the image editing in StyleGAN into label-based and reference-based, and use a non-linear classifier to generate the editing vector.
 </p>
