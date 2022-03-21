@@ -25,3 +25,11 @@ Coming soon!
 
 ## Citation
 If you use this code for your research, please cite
+```
+@article{hu2022style,
+  title={Style Transformer for Image Inversion and Editing},
+  author={Hu, Xueqi and Huang, Qiusheng and Shi, Zhengyi and Li, Siyuan and Gao, Changxin and Sun, Li and Li, Qingli},
+  journal={arXiv preprint arXiv:2203.07932},
+  year={2022}
+}
+```
