@@ -18,10 +18,39 @@ Our style transformer proposes novel multi-stage style transformer in w+ space t
 Coming soon!
 
 ## Training
-Coming soon!
+### Preparing Datasets
+Update `configs/paths_config.py` with the necessary data paths and model paths for training and inference.
+```
+dataset_paths = {
+    'train_data': '/path/to/train/data'
+    'test_data': '/path/to/test/data',
+}
+```
+### Preparing Generator
+We use rosinality's [StyleGAN2 implementation](https://github.com/rosinality/stylegan2-pytorch).
+You can download the 256px pretrained model in the project and put it in the directory `/pretrained_models`.
+
+### Training Inversion Model
+```
+python scripts/train.py \
+--dataset_type=ffhq_encode \
+--exp_dir=results/train_style_transformer \
+--batch_size=8 \
+--test_batch_size=8 \
+--val_interval=5000 \
+--save_interval=10000 \
+--input_nc=6 \
+--stylegan_weights=pretrained_models/stylegan2-ffhq-config-f.pt
+```
 
 ## Inference
-Coming soon!
+```
+python scripts/inference.py \
+--exp_dir=results/infer_style_transformer \
+--checkpoint_path=results/train_style_transformer/checkpoints/best_model.pt \
+--data_path=/test_data \
+--test_batch_size=8 \
+```
 
 ## Citation
 If you use this code for your research, please cite
