@@ -15,7 +15,9 @@ Our style transformer proposes novel multi-stage style transformer in w+ space t
 - Python 3
 
 ## Pretrained Models
-Coming soon!
+We provide the pre-trained models of inversion for face and car domains.
+[FFHQ_Inversion_Model](https://drive.google.com/file/d/1XJWP712o-wWZrfzXJ07vc3dHjJF8CanT/view?usp=sharing)
+[Stanford Cars Inversion Model](https://drive.google.com/file/d/1ri10_CWq42IzzIQ4ZQAxNX7BLsCztd92/view?usp=sharing)
 
 ## Training
 ### Preparing Datasets
