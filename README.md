@@ -39,7 +39,6 @@ python scripts/train.py \
 --test_batch_size=8 \
 --val_interval=5000 \
 --save_interval=10000 \
---input_nc=6 \
 --stylegan_weights=pretrained_models/stylegan2-ffhq-config-f.pt
 ```
 
