@@ -21,16 +21,8 @@ from models.style_transformer import StyleTransformer
 def run():
     test_opts = TestOptions().parse()
 
-    if test_opts.resize_factors is not None:
-        assert len(
-            test_opts.resize_factors.split(',')) == 1, "When running inference, provide a single downsampling factor!"
-        out_path_results = os.path.join(test_opts.exp_dir, 'inference_results',
-                                        'downsampling_{}'.format(test_opts.resize_factors))
-        out_path_coupled = os.path.join(test_opts.exp_dir, 'inference_coupled',
-                                        'downsampling_{}'.format(test_opts.resize_factors))
-    else:
-        out_path_results = os.path.join(test_opts.exp_dir, 'inference_results')
-        out_path_coupled = os.path.join(test_opts.exp_dir, 'inference_coupled')
+    out_path_results = os.path.join(test_opts.exp_dir, 'inference_results')
+    out_path_coupled = os.path.join(test_opts.exp_dir, 'inference_coupled')
 
     os.makedirs(out_path_results, exist_ok=True)
     os.makedirs(out_path_coupled, exist_ok=True)
