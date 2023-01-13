@@ -28,9 +28,11 @@ dataset_paths = {
     'test_data': '/path/to/test/data',
 }
 ```
-### Preparing Generator
+### Preparing Generator and Encoder
 We use rosinality's [StyleGAN2 implementation](https://github.com/rosinality/stylegan2-pytorch).
 You can download the 256px pretrained model in the project and put it in the directory `/pretrained_models`.
+
+Moreover, following pSp, we use some pretrained models to initialize the encoder and for the ID loss, you can download them from [here](https://github.com/eladrich/pixel2style2pixel) and put it in the directory `/pretrained_models`.
 
 ### Training Inversion Model
 ```
