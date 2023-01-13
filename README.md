@@ -58,10 +58,11 @@ python scripts/inference.py \
 ## Citation
 If you use this code for your research, please cite
 ```
-@article{hu2022style,
+@inproceedings{hu2022style,
   title={Style Transformer for Image Inversion and Editing},
   author={Hu, Xueqi and Huang, Qiusheng and Shi, Zhengyi and Li, Siyuan and Gao, Changxin and Sun, Li and Li, Qingli},
-  journal={arXiv preprint arXiv:2203.07932},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={11337--11346},
   year={2022}
 }
 ```
